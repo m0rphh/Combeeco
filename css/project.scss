@@ -1,0 +1,461 @@
+.hero-project {
+  position: relative;
+  width: 100%;
+  min-height: 550px;
+  padding-bottom: 50px;
+  height: auto;
+  background: url("../img/project-hero.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  @include mobile {
+    background-position-x: -700px;
+    // min-height: auto;
+  }
+  h1 {
+    font-size: 60px;
+    color: #fff;
+    font-weight: 400;
+    text-align: center;
+    line-height: 1.2;
+    margin-top: 100px;
+    @include mobile {
+      font-size: 40px;
+    }
+  }
+  .hero-cta {
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 22px;
+    padding: 10px 25px;
+    width: 220px;
+    height: auto;
+    text-decoration: none;
+    border: 1px solid #fff;
+    display: block;
+    margin: 50px auto;
+    margin-bottom: 0;
+    text-align: center;
+    cursor: pointer;
+    z-index: 110;
+  }
+  .cta-gray {
+    margin-top: 0;
+    margin-bottom: 25px;
+    padding: 5px 25px;
+    text-transform: none;
+  }
+  .hidden-form-down {
+    position: absolute;
+    width: 100%; // height: 45vh;
+    height: 400px;
+    background: rgba(0, 0, 0, 0.4);
+    bottom: 0;
+    display: none;
+    z-index: 101;
+    @include mobile {
+      height: auto;
+      background: rgba(0, 0, 0, 0.8);
+    }
+    h3 {
+      text-align: center;
+      font-size: 28px;
+      color: #fff;
+      text-transform: uppercase;
+      font-weight: 400;
+      margin-bottom: 120px;
+    }
+    p {
+      color: #fff;
+      font-size: 18px;
+    }
+    form {
+      display: flex;
+      flex-wrap: wrap;
+      width: 90%;
+      margin: 0 auto;
+      @include mobile {
+        width: 100%;
+        flex-direction: column;
+      }
+      .item {
+        position: relative;
+        margin: auto;
+        @include mobile {
+          min-height: 60px;
+        }
+      }
+      label {
+        color: #fff;
+        position: absolute;
+        top: -80px;
+        left: 10px;
+      }
+      input[type="text"] {
+        color: #fbac39 !important;
+        border: 1px solid white;
+        padding: 10px;
+        margin: -10px 20px;
+        font-size: 24px;
+        text-align: center;
+        outline: none;
+        text-transform: uppercase;
+        background: transparent;
+        box-sizing: border-box;
+      }
+      button[type="submit"] {
+        padding: 12px 30px 12px 30px;
+        background: #62697f;
+        border: none;
+        font-weight: 600;
+        font-size: 24px;
+        box-shadow: none;
+        margin: auto;
+        outline: none;
+        color: #fff;
+        box-sizing: border-box;
+        cursor: pointer;
+      }
+      .slajder {
+        display: flex;
+        position: relative;
+        margin: auto;
+        p {
+          margin: 0 auto;
+          &:first-child {
+            margin-right: 10px;
+          }
+          &:last-child {
+            margin-left: 10px;
+          }
+        }
+        #ex1Slider {
+          margin: 8px auto 0;
+        }
+      }
+    }
+  }
+  #triangle-down {
+    position: absolute;
+    bottom: -50px;
+    width: 0;
+    left: 50%;
+    height: 0;
+    z-index: 10;
+    transform: rotateZ(180deg);
+    margin-left: -100px;
+    border-left: 100px solid transparent;
+    border-right: 100px solid transparent;
+    border-bottom: 50px solid #1a1c22;
+  }
+}
+
+.project-part-2 {
+  position: relative;
+  width: 100%;
+  height: auto;
+  background: #fff;
+  padding-top: 50px;
+  .holder {
+    display: flex;
+    @include tablet {
+      flex-direction: column;
+    }
+    >div {
+      max-width: 50%;
+      width: 100%;
+      flex: 1;
+      margin: 0 auto;
+      margin-bottom: 25px;
+      @include tablet {
+        max-width: 100%;
+      }
+      &.info {
+        h4 {
+          color: $red;
+          font-size: 19px;
+          font-weight: bold;
+          text-transform: uppercase;
+        }
+        ul {
+          margin: 0;
+          padding: 0;
+          list-style: none;
+          li {
+            position: relative;
+            color: $gray;
+            font-size: 18px;
+            font-weight: 400;
+            margin-bottom: 15px;
+            padding-left: 25px;
+            &:before {
+              content: url('../img/list-polygon.svg');
+              margin-right: 10px;
+              position: absolute;
+              top: 0;
+              left: 0;
+            }
+          }
+        }
+        .sub {
+          padding: 10px;
+          border: 1px solid #eef1f2;
+          background: #f9fafc;
+          p {
+            color: $gray;
+            font-weight: 400;
+            font-size: 16px;
+            margin: 0;
+            span {
+              font-weight: bold;
+            }
+          }
+        }
+      }
+      &.card-info {
+        padding: 0 20px 0 20px;
+        @include tablet {
+          max-width: 80%;
+          padding: 0 10px 0 10px;
+        }
+        @include mobile {
+          max-width: 100%;
+          padding: 0;
+        }
+        .card-inner {
+          padding: 10px;
+          background: #f9fafc;
+          -webkit-box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 0.16);
+          -moz-box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 0.16);
+          box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 0.16);
+          height: auto;
+          .top-info {
+            display: flex;
+            >div {
+              flex: 1;
+              margin: 0 auto;
+              p {
+                font-size: 40px;
+                text-align: center;
+                color: $gray;
+                font-weight: 300;
+                span {
+                  display: block;
+                  font-size: 18px;
+                }
+              }
+              svg {
+                max-width: 130px;
+                display: block;
+                margin: 20px auto;
+              }
+              polygon {
+                stroke-width: 3px;
+              }
+              .base-path {
+                fill-opacity: 0;
+                stroke: #626a80;
+                stroke-opacity: 0.4;
+              }
+              .loader-path {
+                stroke: #626a80;
+                fill-opacity: 0;
+              }
+              .loader-text,
+              .loader-percent {
+                fill: #626a80;
+              }
+            }
+          }
+          .rank {
+            display: flex;
+            flex-direction: row;
+            padding: 0 10px 0 10px;
+            >div {
+              flex: 1;
+              margin: 0 auto;
+              &:last-child {
+                text-align: right;
+              }
+              p {
+                font-size: 18px;
+                color: $gray;
+                text-align: left;
+              }
+              img {
+                max-width: 100%;
+              }
+            }
+          }
+          .funding {
+            p {
+              font-size: 18px;
+              color: $gray;
+              margin: 0 0 5px 0;
+              span {
+                font-weight: 600;
+              }
+            }
+          }
+        }
+        .cta-gray {
+          max-width: 100%;
+          font-weight: 600;
+          margin: 20px auto;
+          &.yellow {
+            background: $yellow;
+          }
+        }
+      }
+    }
+  }
+}
+
+.project-navigation {
+  width: 100%;
+  background: #f1f1f1;
+  height: auto;
+  margin: 0 0 25px 0;
+  transition: all .3s ease;
+  &.fixed {
+    position: fixed;
+    width: 100%;
+    top: 100px; // background: #fff;
+    z-index: 99;
+    border-bottom: 1px solid $gray;
+    overflow: hidden;
+    transition: all .3s ease;
+  }
+  ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    height: 100px;
+    @media(max-width: 840px) {
+      display: none;
+    }
+    li {
+      margin: auto;
+      list-style: none;
+      &:after {
+        content: url('../img/nav-shape-project.svg');
+        margin-left: 15px;
+        fill: #62697f;
+      }
+      &:last-child {
+        &:after {
+          content: none;
+        }
+      }
+      a {
+        font-size: 16px;
+        color: $gray;
+        &.active {
+          color: $red;
+        }
+        &:last-child {
+          &:after {
+            content: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+.project-part-3 {
+  background: url('../img/bg2.jpg') no-repeat center center;
+  background-size: cover;
+  margin-bottom: 50px;
+  .section-title {
+    margin-bottom: 0;
+  }
+  .holder {
+    display: flex;
+    @include tablet {
+      flex-direction: column;
+    }
+    >div {
+      flex: 1;
+      margin: 0 auto;
+      padding: 0 20px 20px 20px;
+      max-width: 100%;
+      @include tablet {
+        padding: 0 10px 10px 10px;
+      }
+      h4 {
+        color: $red;
+        text-transform: uppercase;
+        font-size: 19px;
+        text-align: center;
+        margin-top: 0;
+      }
+      h5 {
+        font-size: 18px;
+        color: $gray;
+        text-align: center;
+      }
+      p {
+        font-size: 16px;
+        color: $gray;
+        text-align: justify;
+      }
+    }
+  }
+  .project-holder2 {
+    display: flex;
+    @include tablet {
+      flex-direction: column;
+    }
+    >div {
+      flex: 1;
+      margin: 0 auto;
+      p {
+        color: $gray;
+        font-size: 20px;
+        font-weight: 600;
+        margin-bottom: 30px;
+        &:before {
+          content: url('../img/check-yellow.png');
+          margin-right: 10px;
+          margin-top: 5px;
+        }
+      }
+    }
+  }
+  .holder3 {
+    p {
+      color: $gray;
+      font-size: 18px;
+      position: relative;
+      span {
+        width: 10px;
+        height: 10px;
+        position: absolute;
+        top: 10px;
+        left: -20px;
+        background: $red;
+        border-radius: 50%;
+        @include mobile {
+          // left: -3px;
+          position: relative;
+          display: inline-block;
+          left: -5px;
+          top: 0
+        }
+      }
+    }
+  }
+  .img-holder {
+    display: flex; // >div{
+    //     max-width: 100%;
+    //     width: 33%;
+    //     margin: 0 auto;
+    img {
+      // max-width: 100%;
+      width: 100% // }
+    }
+  }
+}

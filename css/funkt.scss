@@ -1,0 +1,815 @@
+.funkt-newsletter .newsletter .newsletter-sign-up form button[type='submit'] {
+  background: $yellow !important;
+  border: 0 !important;
+}
+
+.funkt-hero {
+  position: relative;
+  background: url('../img/funkt-bg.jpg') no-repeat center center;
+  background-size: cover;
+  width: 100%;
+  height: 600px;
+  #triangle-down {
+    position: absolute;
+    bottom: -50px;
+    width: 0;
+    left: 50%;
+    height: 0;
+    z-index: 10;
+    transform: rotateZ(180deg);
+    margin-left: -100px;
+    border-left: 100px solid transparent;
+    border-right: 100px solid transparent;
+    border-bottom: 50px solid #909790;
+  }
+  h1 {
+    color: #fff;
+    font-size: 60px;
+    text-align: center;
+    font-weight: 400;
+    font-family: $font;
+    @include mobile {
+      font-size: 40px;
+      line-height: 1;
+    }
+  }
+  h2 {
+    color: #fff;
+    font-size: 40px;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    @include mobile {
+      font-size: 30px;
+    }
+  }
+  p {
+    font-size: 26px;
+    color: #fff;
+    text-align: center;
+    font-weight: 400;
+    @include mobile {
+      font-size: 22px;
+    }
+  }
+}
+
+.funkt-part-2 {
+  position: relative;
+  background: url('../img/bg2.jpg') no-repeat center center;
+  background-size: cover;
+  padding: 50px 0 50px 0;
+  .container {
+    // height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: space-between;
+    .section-subtitle {
+      text-transform: uppercase;
+      font-weight: bold;
+      border-bottom: 2px solid #dcdee2;
+      padding-bottom: 10px;
+      color: $gray;
+      max-width: 90%;
+      margin-left: auto;
+      margin-right: auto;
+      @include tablet {
+        margin-top: 140px;
+        position: relative;
+      }
+    }
+    .active {
+      .section-subtitle {
+        text-transform: uppercase;
+        font-weight: bold;
+        border-bottom: 2px solid $red;
+        padding-bottom: 10px;
+        color: $red;
+      }
+    }
+    #no-1 {
+      transition: all .3s ease;
+      &.active {
+        color: $red;
+        border-color: $red;
+        transition: all .5s ease;
+        &:after {
+          transition: all .5s ease;
+          content: url('../img/funkt/schritte1_rott.svg');
+        }
+      }
+      &:after {
+        content: url('../img/funkt/schritte1_grau.svg');
+        width: 90px;
+        position: absolute;
+        left: 50%;
+        margin-left: -45px;
+        z-index: 1;
+      }
+      @include tablet {
+        &:after {
+          // position: relative;
+          // display: block;
+          // left: 0;
+          // margin-left: auto;
+          // margin: 10px auto;
+          position: absolute;
+          display: block;
+          left: 50%;
+          top: -130px;
+          margin-left: -45px !important;
+          margin: 10px auto;
+          transition: all .5s ease;
+        }
+      }
+    }
+    #no-2 {
+      transition: all .5s ease;
+      &.active {
+        color: $red;
+        border-color: $red;
+        transition: all .5s ease;
+        &:after {
+          transition: all .5s ease;
+          content: url('../img/funkt/schritte2_rott.svg');
+        }
+      }
+      &:after {
+        content: url('../img/funkt/schritte2_grau.svg');
+        width: 90px;
+        position: absolute;
+        left: 50%;
+        margin-left: -45px;
+        z-index: 1;
+        transition: all .5s ease;
+      }
+      @include tablet {
+        &:after {
+          // position: relative;
+          // display: block;
+          // left: 0;
+          // margin-left: auto;
+          // margin: 10px auto;
+          // transition: all .5s ease;
+          position: absolute;
+          display: block;
+          left: 50%;
+          top: -130px;
+          margin-left: -45px !important;
+          margin: 10px auto;
+          transition: all .5s ease;
+        }
+      }
+    }
+    #no-3 {
+      transition: all .5s ease;
+      &.active {
+        color: $red;
+        border-color: $red;
+        transition: all .5s ease;
+        &:after {
+          transition: all .5s ease;
+          content: url('../img/funkt/schritte3_rott.svg');
+        }
+      }
+      &:after {
+        transition: all .5s ease;
+        content: url('../img/funkt/schritte3_grau.svg');
+        width: 90px;
+        position: absolute;
+        left: 50%;
+        margin-left: -45px;
+        z-index: 1;
+      }
+      @include tablet {
+        &:after {
+          // transition: all .5s ease;
+          // position: relative;
+          // display: block;
+          // left: 0;
+          // margin-left: auto;
+          // margin: 10px auto;
+          position: absolute;
+          display: block;
+          left: 50%;
+          top: -130px;
+          margin-left: -45px !important;
+          margin: 10px auto;
+          transition: all .5s ease;
+        }
+      }
+    }
+    #no-4 {
+      transition: all .5s ease;
+      &.active {
+        color: $red;
+        border-color: $red;
+        transition: all .5s ease;
+        &:after {
+          content: url('../img/funkt/schritte4_rott.svg');
+        }
+      }
+      &:after {
+        transition: all .5s ease;
+        content: url('../img/funkt/schritte4_grau.svg');
+        width: 90px;
+        position: absolute;
+        left: 50%;
+        margin-left: -45px;
+        z-index: 1;
+      }
+      @include tablet {
+        &:after {
+          // position: relative;
+          // display: block;
+          // left: 0;
+          // margin-left: auto;
+          // margin: 10px auto;
+          // transition: all .5s ease;
+          position: absolute;
+          display: block;
+          left: 50%;
+          top: -130px;
+          margin-left: -45px !important;
+          margin: 10px auto;
+          transition: all .5s ease;
+        }
+      }
+    }
+    .left {
+      width: 100%;
+      margin-left: 0 !important;
+      flex: 1;
+      margin: auto;
+      display: flex;
+      justify-content: flex-start; // background: lightblue;
+      min-height: 200px;
+      transition: all .5s ease;
+      >div {
+        max-width: 45%;
+        width: 100%;
+        padding: 20px;
+        padding-left: 0;
+        @include tablet {
+          max-width: 100%;
+          padding-left: 20px;
+        }
+        @include mobile {
+          padding: 10px !important;
+        }
+        img {
+          max-width: 100px;
+          width: 100%;
+          margin: auto;
+          display: block;
+        }
+        p {
+          font-size: 16px;
+          color: $gray;
+          @include tablet {
+            width: 80%;
+            text-align: center;
+            display: block;
+            margin: auto;
+          }
+          @include mobile {
+            width: 100%;
+          }
+        }
+      }
+    }
+    .middle {
+      width: 2px;
+      height: 100%;
+      position: absolute;
+      left: 50%;
+      margin-left: -1px;
+      hr {
+        width: 2px;
+        height: 80%;
+        border-right: 0;
+        border-style: dotted;
+        margin: auto;
+        border-color: #dcdee2;
+      }
+    }
+    .right {
+      flex: 1;
+      margin-right: 0 !important;
+      margin: auto;
+      width: 100%;
+      display: flex;
+      justify-content: flex-end;
+      min-height: 200px;
+      transition: all .5s ease;
+      >div {
+        max-width: 45%;
+        width: 100%;
+        padding: 20px;
+        padding-right: 0;
+        @include tablet {
+          max-width: 100%;
+          padding-right: 20px;
+        }
+        @include mobile {
+          padding: 10px !important;
+        }
+        img {
+          max-width: 100px;
+          width: 100%;
+          margin: auto;
+          display: block;
+        }
+        p {
+          font-size: 16px;
+          color: $gray;
+          @include tablet {
+            width: 80%;
+            text-align: center;
+            display: block;
+            margin: auto;
+          }
+          @include mobile {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+
+.funk-part-3 {
+  // background: url('../img/Investitionprinzip-bg.jpg') no-repeat center center;
+  height: 900px; // padding: 50px 0 50px 0;
+  // margin-top: -100px;
+  @media(max-width: 835px) {
+    height: auto;
+  }
+  .section-title {
+    color: #fff;
+    margin-bottom: 0;
+  }
+  .parallax {
+    height: 100%;
+    padding: 50px 0 50px 0;
+    margin: 50px 0 50px 0;
+  }
+  .holder {
+    position: relative;
+    max-width: 1000px;
+    width: 100%;
+    margin: auto;
+    height: 600px;
+    display: block;
+    box-sizing: border-box;
+    margin-bottom: 50px;
+    @include ipad {
+      >div {
+        transform: scale(0.8);
+        p {
+          transform: scale(0.8);
+        }
+      }
+      @media(max-width: 835px) {
+        display: none;
+      }
+    }
+    .center {
+      background: url('../img/invent/center.svg') no-repeat center center;
+      width: 250px;
+      height: 300px;
+      display: flex;
+      position: absolute;
+      left: 50%;
+      margin-left: -125px;
+      top: 250px;
+      p {
+        flex: 1;
+        margin: auto;
+        text-align: center;
+        color: #fff;
+        max-width: 50%;
+        @include ipad {
+          font-size: 14px;
+        }
+      }
+    }
+    .bottom-right {
+      position: absolute;
+      bottom: -40px;
+      right: 280px;
+      width: 155px;
+      height: 125px;
+      background: url('../img/invent/unternehmen.svg') no-repeat center center; // background-size: cover;
+    }
+    .dot-bottom-right {
+      max-width: 20px;
+      position: absolute;
+      left: 152px;
+      bottom: -135px;
+    }
+    .text-bottom-right {
+      position: absolute;
+      bottom: -100px;
+      right: 50px;
+      max-width: 200px;
+      text-align: left;
+      color: #fff;
+      margin: 0;
+      @include ipad {
+        right: 90px;
+        @include ipad {
+          font-size: 14px;
+        }
+      }
+    }
+    .bottom-left {
+      position: absolute;
+      bottom: -40px;
+      left: 280px;
+      width: 155px;
+      height: 125px;
+      background: url('../img/invent/feedback.svg') no-repeat center center; // background-size: cover;
+    }
+    .dot-bottom-left {
+      max-width: 20px;
+      position: absolute;
+      right: 152px;
+      bottom: -135px;
+    }
+    .text-bottom-left {
+      position: absolute;
+      bottom: -150px;
+      left: 100px;
+      max-width: 200px;
+      text-align: left;
+      color: #fff;
+      margin: 0;
+      @include ipad {
+        left: 110px;
+        @include ipad {
+          font-size: 14px;
+        }
+      }
+    }
+    .middle-right {
+      position: absolute;
+      top: 50%;
+      width: 155px;
+      height: 125px;
+      background: url('../img/invent/treuehaender.svg') no-repeat center center;
+      margin-top: 40px;
+      right: 180px;
+    }
+    .dot-middle-right {
+      max-width: 20px;
+      position: absolute;
+      left: 152px;
+      bottom: -73px;
+    }
+    .text-middle-right {
+      position: absolute;
+      bottom: 110px;
+      right: 10px;
+      max-width: 140px;
+      text-align: left;
+      color: #fff;
+      margin: 0;
+      @include ipad {
+        right: 50px;
+        @include ipad {
+          font-size: 14px;
+        }
+      }
+    }
+    .middle-left {
+      position: absolute;
+      top: 50%;
+      width: 155px;
+      height: 125px;
+      background: url('../img/invent/rueckzahlung.svg') no-repeat center center;
+      margin-top: 40px;
+      left: 180px;
+    }
+    .dot-middle-left {
+      max-width: 20px;
+      position: absolute;
+      right: 146px;
+      bottom: -73px;
+    }
+    .text-middle-left {
+      position: absolute;
+      bottom: 65px;
+      left: 20px;
+      max-width: 140px;
+      text-align: left;
+      color: #fff;
+      margin: 0;
+      @include ipad {
+        left: 70px;
+        @include ipad {
+          font-size: 14px;
+        }
+      }
+    }
+    .top-left {
+      position: absolute;
+      top: 160px;
+      left: 280px;
+      width: 155px;
+      height: 125px;
+      background: url('../img/invent/immobilien.svg') no-repeat center center;
+    }
+    .dot-top-left {
+      max-width: 20px;
+      position: absolute;
+      right: 152px;
+      bottom: -11px;
+    }
+    .text-top-left {
+      position: absolute;
+      top: 150px;
+      left: 100px;
+      max-width: 140px;
+      text-align: left;
+      color: #fff;
+      margin: 0;
+      @include ipad {
+        left: 120px;
+        top: 160px;
+        @include ipad {
+          font-size: 14px;
+        }
+      }
+    }
+    .top-right {
+      position: absolute;
+      top: 160px;
+      right: 280px;
+      width: 155px;
+      height: 125px;
+      background: url('../img/invent/investieren.svg') no-repeat center center;
+    }
+    .dot-top-right {
+      max-width: 20px;
+      position: absolute;
+      left: 152px;
+      bottom: -11px;
+    }
+    .text-top-right {
+      position: absolute;
+      top: 150px;
+      right: 100px;
+      max-width: 140px;
+      text-align: left;
+      color: #fff;
+      margin: 0;
+      @include ipad {
+        right: 120px;
+        top: 160px;
+        @include ipad {
+          font-size: 14px;
+        }
+      }
+    }
+    @keyframes blink {
+      0% {
+        opacity: 1;
+      }
+      50% {
+        opacity: 0.4;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+    .blink-image {
+      -moz-animation: blink normal 2s infinite ease-in-out;
+      /* Firefox */
+      -webkit-animation: blink normal 2s infinite ease-in-out;
+      /* Webkit */
+      -ms-animation: blink normal 2s infinite ease-in-out;
+      /* IE */
+      animation: blink normal 2s infinite ease-in-out;
+      /* Opera and prob css3 final iteration */
+    }
+  }
+  #center {}
+}
+
+.holder2 {
+  display: none;
+  max-width: 100%;
+  margin: auto;
+  flex-direction: column;
+  align-items: center; // padding: 50px 0 50px 0;
+  @media(max-width: 835px) {
+    display: flex;
+  }
+  .section-title {
+    margin-bottom: 50px;
+  }
+  .item {
+    flex: 1;
+    width: 280px;
+    height: 300px;
+    margin-bottom: 25px;
+    background: url('../img/invent/center.svg') no-repeat center center;
+    align-content: flex-start;
+    display: flex;
+    flex-direction: column;
+    @include mobile {
+      width: 260px;
+      height: 280px;
+      p {
+        font-size: 14px;
+      }
+    }
+    img {
+      max-width: 50px;
+      width: 100%;
+      height: 50px;
+      margin: 35px auto;
+      margin-bottom: 0;
+    }
+    p {
+      text-align: center;
+      color: #fff;
+      margin: 0 auto;
+      width: 80%;
+      span {
+        display: block;
+        font-size: 22px;
+        font-weight: bold;
+        margin: auto auto;
+      }
+    }
+  }
+}
+
+.funkt-part-4 {
+  position: relative;
+  height: 934px;
+  background: #fff;
+  display: block;
+  box-sizing: border-box;
+  .container {
+    padding: 50px 0 50px 0;
+  }
+  .section-title {
+    margin-bottom: 0;
+  }
+  .section-subtitle {
+    margin-top: 0;
+  }
+}
+
+.single-project-full {
+  box-sizing: border-box;
+  position: relative;
+  width: 100%;
+  max-height: 680px;
+  display: block;
+  margin: auto;
+  -webkit-box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 0.16);
+  -moz-box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 0.16);
+  box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 0.16);
+  svg {
+    width: 90px;
+    margin: 10px auto;
+  }
+  .header {
+    background: #fff;
+    padding: 20px 10px 10px 20px;
+    height: 20%;
+    .left {
+      width: 60%;
+      display: inline-block;
+      float: left;
+      h3 {
+        margin: 0;
+        color: $gray;
+        text-transform: uppercase;
+        font-size: 19px;
+        text-align: left;
+        @include mobile {
+          font-size: 17px;
+        }
+        span {
+          display: block;
+          text-transform: none;
+          color: $gray;
+          font-size: 16px;
+          @include mobile {
+            font-size: 14px;
+          }
+        }
+      }
+      p {
+        font-size: 14px;
+        color: $gray;
+        margin-bottom: 0;
+        @include mobile {
+          margin-top: 0;
+        }
+      }
+    }
+    .right {
+      width: 40%;
+      display: inline-block;
+      float: right;
+      p.price {
+        font-size: 16px;
+        color: #000;
+        text-align: right;
+        margin: 0;
+        @include mobile {
+          font-size: 14px;
+        }
+        span {
+          font-size: 30px;
+          font-weight: 700;
+          display: block;
+          @include mobile {
+            font-size: 24px;
+          }
+        }
+      }
+    }
+  }
+  .body {
+    display: flex;
+    justify-content: flex-end;
+    background: url('../img/project-full.jpg') no-repeat center center;
+    position: relative;
+    .rating {
+      position: absolute;
+      left: 20px;
+      top: 10px;
+    }
+    .project-info {
+      display: block;
+      width: 40%;
+      height: 100%;
+      background: rgba(#191919, 0.8);
+      .first {
+        border-bottom: 1px solid #fff;
+        padding-bottom: 10px;
+        p {
+          font-size: 22px;
+          text-align: center;
+          color: #fff;
+          &:first-child {
+            margin-bottom: 0;
+          }
+          &:last-child {
+            margin-top: 0;
+          }
+        }
+      }
+      .second {
+        border-bottom: 1px solid #fff;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        p {
+          font-size: 40px;
+          color: #fff;
+          text-align: center;
+          margin: auto;
+          line-height: 0.9;
+          span {
+            display: block;
+            font-size: 16px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.funkt-part-6 {
+  position: relative; // height: 500px;
+  padding: 50px 0 50px 0;
+  background: #fff;
+  #triangle-down {
+    position: absolute;
+    bottom: -50px;
+    width: 0;
+    left: 50%;
+    height: 0;
+    z-index: 10;
+    transform: rotateZ(180deg);
+    margin-left: -100px;
+    border-left: 100px solid transparent;
+    border-right: 100px solid transparent;
+    border-bottom: 50px solid #fff;
+  }
+  p {
+    font-weight: 400;
+    font-size: 14px;
+    color: #62697f;
+    text-align: justify;
+    margin-top: 50px;
+  }
+}
