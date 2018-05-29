@@ -1,4 +1,4 @@
-<div style="height: 100px">
+<div class="top-menu-holder">
   <div class="top-menu stick">
     <div class="site-logo">
 
@@ -26,12 +26,12 @@
         <li>
           <a href="about-us.php">Über uns</a>
         </li>
-        <li>
+        <!-- <li>
           <a href="">Wissen</a>
-        </li>
-        <li>
+        </li> -->
+        <!-- <li>
           <a class="registration btn-effect-light" href="">Registrieren</a>
-        </li>
+        </li> -->
         <li>
           <a class="login btn-effect-dark" href="">Anmelden</a>
         </li>

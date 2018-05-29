@@ -31,11 +31,11 @@
     <?php include("inc/top-menu.php"); ?>
     <!-- TOP MENU -->
     <div class="slider">
-      <div class="slide">
+      <div class="slide slide1">
+        <div class="holder">
         <h1>Wir schwärmen für
           <span> Immobilien</span>
         </h1>
-        <div class="holder">
           <div class="frames frame-1">
             <img src="img/atraktivezinsen.svg" alt="">
             <p>Attraktive Zinsen</p>
@@ -48,9 +48,29 @@
             <img src="img/kurzeleifzeit.svg" alt="">
             <p>Attraktive Zinsen</p>
           </div>
+      <a href="#" class="hero-cta">Jetzt informieren</a>
         </div>
       </div>
-      <a href="#" class="hero-cta">Jetzt investieren</a>
+      <div class="slide slide2">
+        <div class="holder">
+        <h1>Wir schwärmen für
+          <span> Immobilien</span>
+        </h1>
+          <!-- <div class="frames frame-1">
+            <img src="img/atraktivezinsen.svg" alt="">
+            <p>Attraktive Zinsen</p>
+          </div>
+          <div class="frames frame-2">
+            <img src="img/kleineinvest.svg" alt="">
+            <p>Attraktive Zinsen</p>
+          </div>
+          <div class="frames frame-3">
+            <img src="img/kurzeleifzeit.svg" alt="">
+            <p>Attraktive Zinsen</p>
+          </div> -->
+      <a href="#" class="hero-cta">Jetzt informieren</a>
+        </div>
+      </div>
     </div>
 
   </div>
@@ -89,7 +109,7 @@
           </div>
         </div>
       </div>
-      <a href="" class="cta-gray no-margin-bottom">Lesen Sie mehr</a>
+      <!-- <a href="" class="cta-gray no-margin-bottom">Lesen Sie mehr</a> -->
     </div>
     <!-- container -->
     <div id="triangle-down"></div>
@@ -270,7 +290,7 @@
           <p>Sie wählen den passenden Anlagebetrag und investieren: Effizient, einfach, direkt.</p>
         </div>
       </div>
-      <a href="" class="cta-gray">So funktioniert’s</a>
+      <a href="funktionert.php" class="cta-gray">So funktioniert’s</a>
     </div>
     <div id="triangle-down"></div>
   </div>
@@ -328,6 +348,23 @@
     </div>
     <div id="triangle-down"></div>
   </div>
+
+  	<div class="funkt-part-6">
+		<div id="triangle-down"></div>
+		<div class="container">
+			<p>
+				RISIKOHINWEIS: Wir weisen Sie ausdrücklich darauf hin, dass die Zeichnung von Vermögensanlagen und Wertpapieren ein hohes
+				Verlustrisiko für Ihr eingesetztes Kapital bis zum Totalverlust birgt. Setzen Sie daher nur solche finanzielle Mittel ein,
+				deren teilweisen oder vollständigen Verlust Sie sich leisten können. Die über iFunded.de zur Zeichnung angebotenen Vermögensanlagen
+				und Wertpapiere sind nicht für alle Investoren geeignet. Stellen Sie daher unbedingt sicher, dass Sie die mit der Zeichnung
+				von Vermögensanlagen und Wertpapieren verbundenen Risiken vollständig verstanden haben und lassen Sie sich bei Bedarf von
+				einer unabhängigen und sachkundigen Person oder Institution beraten, bevor Sie zeichnen. Weitere Informationen zu den Risiken
+				einer Vermögensanlage bzw. eines Wertpapiers entnehmen Sie bitte dem jeweiligen Vermögensanlagen-Informationsblatt bzw.
+				Wertpapierprospekt.
+			</p>
+		</div>
+	</div>
+
   <!-- FOOTER -->
   <?php include("inc/footer.php"); ?>
   <!-- FOOTER -->
@@ -347,7 +384,7 @@
 <script src="js/jquery.multilevelpushmenu.min.js" charset="utf-8"></script>
   <script src="js/parallax.min.js"></script>
   <script src="js/bootstrap-slider.min.js" charset="utf-8"></script>
-  <!-- <script src="js/jquery.bxslider.min.js"></script> -->
+  <script src="js/jquery.bxslider.js"></script>
   <script src="js/scrollreveal.js"></script>
   <script src="js/svg-animation.js"></script>
         <script type="text/javascript" src="http://oss.maxcdn.com/libs/modernizr/2.6.2/modernizr.min.js"></script>
@@ -355,7 +392,7 @@
   <script>
     $(document).ready(function () {
 
-
+      $('.slider').bxSlider();
 
 
       window.sr = ScrollReveal();

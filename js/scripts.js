@@ -1,5 +1,12 @@
 $(document).ready(function () {
-
+    $('#menu').show();
+    $(".login").click(function (e) {
+        e.preventDefault();
+        $('html,body').animate({
+            scrollTop: $(".part-4").offset().top - 100
+        },
+            'slow');
+    });
 
 var stickyNavTop = $('.stick').offset().top;
 var stickyOriginal = $('.stick');
@@ -22,7 +29,7 @@ var stickyNav = function () {
         $('#menu-opener').addClass('onFixed');
         $('#menu-opener').css({'color': '#333'});
         $("#menu-opener").attr('src', 'img/menu_black.svg');
-        $("#menu-opener").css({ 'top': '25px' });
+        $("#menu-opener").css({ 'top': '20px' });
         if($(window).width() < 545) {
             $("#menu-opener").css({'top': '20px'});
         }
@@ -38,7 +45,7 @@ var stickyNav = function () {
         // if ($(window).width() > 545) {
         //     $("#menu-opener").css({ 'top': '50px' });
         // }
-        $("#menu-opener").css({ 'top': '30px' });
+        $("#menu-opener").css({ 'top': '20px' });
     }
 
 };

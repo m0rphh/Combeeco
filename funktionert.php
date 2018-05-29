@@ -334,37 +334,37 @@
 				origin: 'bottom',
 			}, 1000);
 			sr.reveal('#text-1', {
-				duration: 500,
+				duration: 400,
 				delay: 250,
-				origin: 'bottom',
-				afterReveal: function (domEl) {
+				origin: 'left',
+				beforeReveal: function (domEl) {
 					//  console.log('overrrr');
 					$('#no-1').addClass('active');
 				},
 			}, 1000);
 			sr.reveal('#text-2', {
-				duration: 500,
+				duration: 400,
 				delay: 250,
-				origin: 'bottom',
-				afterReveal: function (domEl) {
+				origin: 'left',
+				beforeReveal: function (domEl) {
 					//  console.log('overrrr');
 					$('#no-2').addClass('active');
 				},
 			}, 1000);
 			sr.reveal('#text-3', {
-				duration: 500,
+				duration: 400,
 				delay: 250,
 				origin: 'bottom',
-				afterReveal: function (domEl) {
+				beforeReveal: function (domEl) {
 					//  console.log('overrrr');
 					$('#no-3').addClass('active');
 				},
 			}, 1000);
 			sr.reveal('#text-4', {
-				duration: 500,
+				duration: 400,
 				delay: 250,
 				origin: 'bottom',
-				afterReveal: function (domEl) {
+				beforeReveal: function (domEl) {
 					//  console.log('overrrr');
 					$('#no-4').addClass('active');
 				},

@@ -228,6 +228,23 @@
       </h5>
     </div>
   </div>
+
+  	<div class="funkt-part-6">
+		<div id="triangle-down"></div>
+		<div class="container">
+			<p>
+				RISIKOHINWEIS: Wir weisen Sie ausdrücklich darauf hin, dass die Zeichnung von Vermögensanlagen und Wertpapieren ein hohes
+				Verlustrisiko für Ihr eingesetztes Kapital bis zum Totalverlust birgt. Setzen Sie daher nur solche finanzielle Mittel ein,
+				deren teilweisen oder vollständigen Verlust Sie sich leisten können. Die über iFunded.de zur Zeichnung angebotenen Vermögensanlagen
+				und Wertpapiere sind nicht für alle Investoren geeignet. Stellen Sie daher unbedingt sicher, dass Sie die mit der Zeichnung
+				von Vermögensanlagen und Wertpapieren verbundenen Risiken vollständig verstanden haben und lassen Sie sich bei Bedarf von
+				einer unabhängigen und sachkundigen Person oder Institution beraten, bevor Sie zeichnen. Weitere Informationen zu den Risiken
+				einer Vermögensanlage bzw. eines Wertpapiers entnehmen Sie bitte dem jeweiligen Vermögensanlagen-Informationsblatt bzw.
+				Wertpapierprospekt.
+			</p>
+		</div>
+	</div>
+
   <!-- FOOTER -->
   <?php include("inc/footer.php"); ?>
   <!-- FOOTER -->
@@ -252,7 +269,14 @@
 
   <script>
     $(document).ready(function () {
+//       $(".login").click(function(e) {
+//   e.preventDefault();
+//    $(window).location.href='http://localhost:8888/combeeco/index.php';
 
+//     $('html,body').animate({
+//         scrollTop: $(".part-4").offset().top - 100},
+//         'slow');
+// });
       window.sr = ScrollReveal();
 
       //CONTENT ANIMATION

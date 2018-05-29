@@ -18,7 +18,7 @@
       <li >
         <a href="about-us.php">Über uns</a>
       </li>
-      <li >
+      <!-- <li >
         <a href="">wissen</a>
       </li>
       <li >
@@ -26,7 +26,7 @@
       </li>
       <li >
         <a href="">Anmelden</a>
-      </li>
+      </li> -->
       <li>
         <a href="javascaript:void(0)">Kontakt</a>
         <ul>

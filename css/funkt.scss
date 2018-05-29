@@ -9,6 +9,7 @@
   background-size: cover;
   width: 100%;
   height: 600px;
+  padding-top: 100px;
   #triangle-down {
     position: absolute;
     bottom: -50px;
@@ -93,9 +94,9 @@
       &.active {
         color: $red;
         border-color: $red;
-        transition: all .5s ease;
+        // transition: all .5s ease;
         &:after {
-          transition: all .5s ease;
+          // transition: all .5s ease;
           content: url('../img/funkt/schritte1_rott.svg');
         }
       }
@@ -125,13 +126,13 @@
       }
     }
     #no-2 {
-      transition: all .5s ease;
+      transition: all .3s ease;
       &.active {
         color: $red;
         border-color: $red;
-        transition: all .5s ease;
+        // transition: all .5s ease;
         &:after {
-          transition: all .5s ease;
+          // transition: all .5s ease;
           content: url('../img/funkt/schritte2_rott.svg');
         }
       }
@@ -163,18 +164,18 @@
       }
     }
     #no-3 {
-      transition: all .5s ease;
+      transition: all .3s ease;
       &.active {
         color: $red;
         border-color: $red;
-        transition: all .5s ease;
+        // transition: all .5s ease;
         &:after {
-          transition: all .5s ease;
+          // transition: all .5s ease;
           content: url('../img/funkt/schritte3_rott.svg');
         }
       }
       &:after {
-        transition: all .5s ease;
+        // transition: all .5s ease;
         content: url('../img/funkt/schritte3_grau.svg');
         width: 90px;
         position: absolute;
@@ -201,7 +202,7 @@
       }
     }
     #no-4 {
-      transition: all .5s ease;
+      transition: all .3s ease;
       &.active {
         color: $red;
         border-color: $red;
