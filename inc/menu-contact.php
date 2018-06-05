@@ -7,8 +7,10 @@
         <ul>
           <div>
             <div class="form-holder levelHolderClass rtl" data-level="2">
+               <div class="hide-text">
               <h3 style="">Wie können wir Ihnen helfen?</h3>
               <p>Schreiben Sie uns und wir werden uns umgehend bei Ihnen melden!</p>
+              </div>
               <div id="first-form" class="form-dropdown">
                 <p>kontaktformular</p>
                 <i class="fa fa-plus"></i>
@@ -29,7 +31,7 @@
               </div>
 
               <form id="second-form-child" action="">
-                <input id="input-name-2" type="text" name="Name"  placeholder="Voller">
+                <input id="input-name-2" type="text" name="Name"  placeholder="Vollname">
                 <input type="text" name="" value="" placeholder="Telefonnummer">
                 <input type="text" name="" value="" placeholder="Datum">
                 <input type="text" name="" value="" placeholder="Uhrzeit (09.00-18.00)">

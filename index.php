@@ -16,16 +16,46 @@
 <body>
   <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
     crossorigin="anonymous"></script>
-<!--
-  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-    crossorigin="anonymous"></script> -->
+
+  <!-- <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+      crossorigin="anonymous"></script> -->
 
 
 
 
 
   <!-- <div id="pushobj"> -->
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+  <img src="img/logo-white.svg" alt="">
+<h5 class="modal-title" id="exampleModalLabel">Wie können wir Ihnen helfen? Treten Sie mit uns in Kontakt
+</h5>
+        <a type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <img src="img/close.png" alt="">
+        </a>
+      </div>
+      <div class="modal-body">
+        <form action="">
+          <input type="text" placeholder="Vorname*">
+          <input type="text" placeholder="Nachname*">
+          <div style="width: 100%; height: 1px; clear: both;"></div>
+          <input type="text" placeholder="Email*">
+          <input type="text" placeholder="Telefonnumer">
+          <label for="textarea">Nachricht</label>
+          <textarea name="" id="textarea" cols="5" rows="5"></textarea>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <a type="button" class="button" data-dismiss="modal">SENDEN</a>
+        <a type="button" class="button close-modal-button" data-dismiss="modal">CLOSE</a>
 
+      </div>
+    </div>
+  </div>
+</div>
   <div class="hero">
     <!-- TOP MENU -->
     <?php include("inc/top-menu.php"); ?>
@@ -33,9 +63,9 @@
     <div class="slider">
       <div class="slide slide1">
         <div class="holder">
-        <h1>Wir schwärmen für
-          <span> Immobilien</span>
-        </h1>
+          <h1>Wir schwärmen für
+            <span> Immobilien</span>
+          </h1>
           <div class="frames frame-1">
             <img src="img/atraktivezinsen.svg" alt="">
             <p>Attraktive Zinsen</p>
@@ -48,14 +78,14 @@
             <img src="img/kurzeleifzeit.svg" alt="">
             <p>Attraktive Zinsen</p>
           </div>
-      <a href="#" class="hero-cta">Jetzt informieren</a>
+          <a href="#" class="hero-cta"  data-toggle="modal" data-target="#exampleModal">Jetzt informieren</a>
         </div>
       </div>
       <div class="slide slide2">
         <div class="holder">
-        <h1>Wir schwärmen für
-          <span> Immobilien</span>
-        </h1>
+          <h1>Wir schwärmen für
+            <span> Immobilien</span>
+          </h1>
           <!-- <div class="frames frame-1">
             <img src="img/atraktivezinsen.svg" alt="">
             <p>Attraktive Zinsen</p>
@@ -68,7 +98,7 @@
             <img src="img/kurzeleifzeit.svg" alt="">
             <p>Attraktive Zinsen</p>
           </div> -->
-      <a href="#" class="hero-cta">Jetzt informieren</a>
+          <a href="#" class="hero-cta" data-toggle="modal" data-target="#exampleModal">Jetzt informieren</a>
         </div>
       </div>
     </div>
@@ -120,89 +150,234 @@
       <h2 class="section-title no-margin-bottom">Jetzt investieren!</h2>
       <p class="section-subtitle">Aktuelle Projekte</p>
 
-
-      <div class="single-project">
-        <div class="header">
-          <div class="left">
-            <h3>Mikroapartments
-              <span>Berlin-Schöneweide </span>
-            </h3>
-            <p>Wassergrundstück mit über 1.500 m2</p>
-          </div>
-          <div class="right">
-            <p class="price">Finanzierungsziel:
-              <span>500.000 € </span>
-            </p>
-          </div>
-        </div>
-        <div class="body">
-          <img class="rating" src="img/B.png" alt="">
-          <div class="project-info">
-            <div class="info">
+      <div class="project-slider">
+        <!-- <div class="slide"> -->
+          <div class="single-project project-1">
+            <div class="header">
               <div class="left">
-                <svg id="loadingSvg" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
-                  y="0px" viewBox="0 0 82.7 95.5" style="enable-background:new 0 0 82.7 95.5;" xml:space="preserve">
-                  <style type="text/css">
-                    .st0 {
-                      opacity: 0.4;
-                      fill: none;
-                      stroke: #62697F;
-                      stroke-width: 3;
-                      stroke-miterlimit: 10;
-                    }
-                  </style>
-                  <polygon class="base-path" points="41.1,1.5 41.6,1.5 41.7,1.5 41.8,1.5 42,1.5 42.5,1.6 42.9,1.6 43.5,1.7 43.9,1.8 44.3,2 44.7,2.1
-                                  45,2.2 45.4,2.4 45.7,2.6 46.1,2.8 46.7,3.1 48.9,4.4 53.9,7.3 61.6,11.7 77,20.6 77.5,20.9 78,21.3 78.4,21.8 78.8,22.2 79.1,22.6
-                                  79.5,23.1 79.9,23.8 80.3,24.5 80.6,25.2 80.8,25.9 81,26.6 81.1,27.5 81.2,28.5 81.2,30.7 81.2,62.8 81.2,63.2 81.2,63.6
-                                  81.2,64.1 81.1,64.7 81.1,65.1 81,65.6 80.7,66.6 80.3,67.5 79.9,68.3 79.3,69.2 78.9,69.8 78.3,70.4 77.6,71 76.9,71.5 49.5,87.3
-                                  47.5,88.5 46.8,88.8 46,89.3 45,89.9 43.9,90.2 42.9,90.4 42.1,90.5 41.3,90.6 40.6,90.5 39.6,90.4 38.9,90.3 37.7,89.9 36.7,89.4
-                                  35.6,88.7 31.2,86.2 13.2,75.8 5.1,71 4.5,70.5 3.9,69.9 3.3,69.1 2.8,68.3 2.4,67.6 2,66.6 1.8,65.9 1.6,65.2 1.5,64.2 1.5,63.3
-                                  1.5,61.9 1.5,51.9 1.5,41.7 1.5,34.4 1.5,28.6 1.5,27.8 1.7,26.5 2,25.4 2.4,24.5 2.9,23.6 3.3,22.9 4.2,21.8 5.3,20.9 6.1,20.4
-                                  8.2,19.2 22.7,10.8 37.3,2.4 38.9,1.8 39.4,1.7 39.8,1.6 40.3,1.6 40.7,1.5 " />
-                  <polygon class="loader-path" points="41.1,1.5 41.6,1.5 41.7,1.5 41.8,1.5 42,1.5 42.5,1.6 42.9,1.6 43.5,1.7 43.9,1.8 44.3,2 44.7,2.1
-                                  45,2.2 45.4,2.4 45.7,2.6 46.1,2.8 46.7,3.1 48.9,4.4 53.9,7.3 61.6,11.7 77,20.6 77.5,20.9 78,21.3 78.4,21.8 78.8,22.2 79.1,22.6
-                                  79.5,23.1 79.9,23.8 80.3,24.5 80.6,25.2 80.8,25.9 81,26.6 81.1,27.5 81.2,28.5 81.2,30.7 81.2,62.8 81.2,63.2 81.2,63.6
-                                  81.2,64.1 81.1,64.7 81.1,65.1 81,65.6 80.7,66.6 80.3,67.5 79.9,68.3 79.3,69.2 78.9,69.8 78.3,70.4 77.6,71 76.9,71.5 49.5,87.3
-                                  47.5,88.5 46.8,88.8 46,89.3 45,89.9 43.9,90.2 42.9,90.4 42.1,90.5 41.3,90.6 40.6,90.5 39.6,90.4 38.9,90.3 37.7,89.9 36.7,89.4
-                                  35.6,88.7 31.2,86.2 13.2,75.8 5.1,71 4.5,70.5 3.9,69.9 3.3,69.1 2.8,68.3 2.4,67.6 2,66.6 1.8,65.9 1.6,65.2 1.5,64.2 1.5,63.3
-                                  1.5,61.9 1.5,51.9 1.5,41.7 1.5,34.4 1.5,28.6 1.5,27.8 1.7,26.5 2,25.4 2.4,24.5 2.9,23.6 3.3,22.9 4.2,21.8 5.3,20.9 6.1,20.4
-                                  8.2,19.2 22.7,10.8 37.3,2.4 38.9,1.8 39.4,1.7 39.8,1.6 40.3,1.6 40.7,1.5 " />
-                  <text id="percentText" x="40" y="45" text-anchor="middle" alignment-baseline="middle" class="st1 st2 st3 loader-percent"
-                    style="font-family: 'Titillium Web', sans-serif; font-weight: bold; font-size: 25px">48%</text>
-                  <text id="loadingText" x="40" y="60" text-anchor="middle" alignment-baseline="middle" class="st1 st4 st5 loader-text" style="font-family: 'Titillium Web', sans-serif; font-size: 14px">erreicht</text>
-                </svg>
+                <h3>Neubau
+                  <span>Selbstbestimmtes Wohnen im Alter </span>
+                </h3>
+                <p>
+                  <i class="fa fa-map-marker"></i> Berlin-Lichtenberg</p>
               </div>
-              <div class="right">
-                <div class="up">
-                  <p>58 Tage
-                    <span>Fundinglaufzeit</span>
+
+            </div>
+            <div class="body">
+              <div class="ribbon">
+                <img class="" src="img/projects/ribbon-blue.png" />
+                <p class="ribbon-text">Bereits
+                  <br> zurückgezahlt
+                </p>
+              </div>
+              <div class="project-info">
+                <div class="left-side">
+                  <p>„Selbstbestimmtes
+                    <br> Wohnen im Alter“
                   </p>
                 </div>
-                <div class="down">
-                  <p>6%
-                    <span>Zinsen p.a.</span>
-                  </p>
-                  <p>14
-                    <span>Monate Laufzeit</span>
+                <div class="right-side">
+                  <p>Investiert:
+                    <span>
+                      215.000 €
+                    </span>
                   </p>
                 </div>
+                <hr class="line">
               </div>
             </div>
-            <div class="button">
-              <a href="" class="cta-gray" style="margin: 0 auto 0 auto">zum projekt</a>
+          </div>
+          <!-- </div>
+          <div class="slide"> -->
+          <div class="single-project project-2">
+            <div class="header">
+              <div class="left">
+                <h3>umbao
+                  <span>Erweiterung Selbstbestimmtes Wohnen im Alter </span>
+                </h3>
+                <p>
+                  <i class="fa fa-map-marker"></i> Berlin-Marzahn</p>
+              </div>
+
+            </div>
+            <div class="body">
+              <div class="ribbon">
+                <p class="ribbon-text">Bereits
+                  <br> zurückgezahlt
+                </p>
+                <img class="" src="img/projects/ribbon-blue.png" />
+              </div>
+              <div class="project-info">
+                <div class="left-side">
+                  <p>Erweiterung „Selbstbestimmtes
+                    <br> Wohnen im Alter“
+                  </p>
+                </div>
+                <div class="right-side">
+                  <p>Investiert:
+                    <span>
+                      305.000 €
+                    </span>
+                  </p>
+                </div>
+                <hr class="line">
+              </div>
+            </div>
+          </div>
+        <!-- </div>
+        <div class="slide"> -->
+          <div class="single-project project-3">
+            <div class="header">
+              <div class="left">
+                <h3>Revitalisierung
+                  <span>Bürohaus im Chemnitz-Park </span>
+                </h3>
+                <p>
+                  <i class="fa fa-map-marker"></i> Chemnitz-Röhrsdorf</p>
+              </div>
+
+            </div>
+            <div class="body">
+               <div class="ribbon">
+                <p class="ribbon-text">Bereits
+                  <br> zurückgezahlt
+                </p>
+                <img class="" src="img/projects/ribbon-blue.png" />
+              </div>
+              <div class="project-info">
+                <div class="left-side">
+                  <p>Bürohaus im Chemnitz-Park
+                  </p>
+                </div>
+                <div class="right-side">
+                  <p>Investiert:
+                    <span>
+                      640.000 €
+                    </span>
+                  </p>
+                </div>
+                <hr class="line">
+              </div>
+            </div>
+          </div>
+          <!-- </div>
+          <div class="slide"> -->
+          <div class="single-project project-4">
+            <div class="header">
+              <div class="left">
+                <h3>Projektentwicklung
+                  <span>Villa Grünwald </span>
+                </h3>
+                <p>
+                  <i class="fa fa-map-marker"></i> Magdeburg Neustadt</p>
+              </div>
+
+            </div>
+            <div class="body">
+               <div class="ribbon">
+                <p class="ribbon-text">Bereits
+                  <br> zurückgezahlt
+                </p>
+                <img class="" src="img/projects/ribbon-blue.png" />
+              </div>
+              <div class="project-info">
+                <div class="left-side">
+                  <p>Villa Grünwald
+                  </p>
+                </div>
+                <div class="right-side">
+                  <p>Investiert:
+                    <span>
+                      957.000 €
+                    </span>
+                  </p>
+                </div>
+                <hr class="line">
+              </div>
+            </div>
+          </div>
+        <!-- </div>
+        <div class="slide"> -->
+          <div class="single-project project-5">
+            <div class="header">
+              <div class="left">
+                <h3>Projektentwicklung
+                  <span>Hotel und Wohnbauareal für über 1.000 Wohnungen </span>
+                </h3>
+                <p>
+                  <i class="fa fa-map-marker"></i> Berlin-Grünau</p>
+              </div>
+
+            </div>
+            <div class="body">
+               <div class="ribbon">
+                <p class="ribbon-text">Bereits
+                  <br> zurückgezahlt
+                </p>
+                <img class="" src="img/projects/ribbon-blue.png" />
+              </div>
+              <div class="project-info">
+                <div class="left-side">
+                  <p>Hotel und Wohnbauareal<br>für über 1.000 Wohnungen
+                  </p>
+                </div>
+                <div class="right-side">
+                  <p>Investiert:
+                    <span>
+                      1.250.000 €
+                    </span>
+                  </p>
+                </div>
+                <hr class="line">
+              </div>
+            </div>
+          </div>
+          <!-- </div>
+          <div class="slide"> -->
+          <div class="single-project project-6">
+            <div class="header">
+              <div class="left">
+                <h3>Projektentwicklung
+                  <span>Einfamilienhäuser Köpenicker Straße
+ </span>
+                </h3>
+                <p>
+                  <i class="fa fa-map-marker"></i> Berlin-Kaulsdorf</p>
+              </div>
+
+            </div>
+            <div class="body">
+               <div class="ribbon">
+                <p class="ribbon-text">Bereits
+                  <br> zurückgezahlt
+                </p>
+                <img class="" src="img/projects/ribbon-blue.png" />
+              </div>
+              <div class="project-info">
+                <div class="left-side">
+                  <p>Einfamilienhäuser<br>
+Köpenicker Straße
+                  </p>
+                </div>
+                <div class="right-side">
+                  <p>Investiert:
+                    <span>
+                      650.000 €
+                    </span>
+                  </p>
+                </div>
+                <hr class="line">
+              </div>
             </div>
           </div>
         </div>
+
+
+
       </div>
+      <!-- project-slider -->
     </div>
-
-
-
-
-  </div>
-  <!-- project-slider -->
-  </div>
-  <!-- container -->
+    <!-- container -->
   </div>
   <!-- part3 -->
   <!-- part4 -->
@@ -349,93 +524,114 @@
     <div id="triangle-down"></div>
   </div>
 
-  	<div class="funkt-part-6">
-		<div id="triangle-down"></div>
-		<div class="container">
-			<p>
-				RISIKOHINWEIS: Wir weisen Sie ausdrücklich darauf hin, dass die Zeichnung von Vermögensanlagen und Wertpapieren ein hohes
-				Verlustrisiko für Ihr eingesetztes Kapital bis zum Totalverlust birgt. Setzen Sie daher nur solche finanzielle Mittel ein,
-				deren teilweisen oder vollständigen Verlust Sie sich leisten können. Die über iFunded.de zur Zeichnung angebotenen Vermögensanlagen
-				und Wertpapiere sind nicht für alle Investoren geeignet. Stellen Sie daher unbedingt sicher, dass Sie die mit der Zeichnung
-				von Vermögensanlagen und Wertpapieren verbundenen Risiken vollständig verstanden haben und lassen Sie sich bei Bedarf von
-				einer unabhängigen und sachkundigen Person oder Institution beraten, bevor Sie zeichnen. Weitere Informationen zu den Risiken
-				einer Vermögensanlage bzw. eines Wertpapiers entnehmen Sie bitte dem jeweiligen Vermögensanlagen-Informationsblatt bzw.
-				Wertpapierprospekt.
-			</p>
-		</div>
-	</div>
+  <div class="funkt-part-6">
+    <div id="triangle-down"></div>
+    <div class="container">
+      <p>
+        RISIKOHINWEIS: Wir weisen Sie ausdrücklich darauf hin, dass die Zeichnung von Vermögensanlagen und Wertpapieren ein hohes
+        Verlustrisiko für Ihr eingesetztes Kapital bis zum Totalverlust birgt. Setzen Sie daher nur solche finanzielle Mittel
+        ein, deren teilweisen oder vollständigen Verlust Sie sich leisten können. Die über iFunded.de zur Zeichnung angebotenen
+        Vermögensanlagen und Wertpapiere sind nicht für alle Investoren geeignet. Stellen Sie daher unbedingt sicher, dass
+        Sie die mit der Zeichnung von Vermögensanlagen und Wertpapieren verbundenen Risiken vollständig verstanden haben
+        und lassen Sie sich bei Bedarf von einer unabhängigen und sachkundigen Person oder Institution beraten, bevor Sie
+        zeichnen. Weitere Informationen zu den Risiken einer Vermögensanlage bzw. eines Wertpapiers entnehmen Sie bitte dem
+        jeweiligen Vermögensanlagen-Informationsblatt bzw. Wertpapierprospekt.
+      </p>
+    </div>
+  </div>
 
   <!-- FOOTER -->
   <?php include("inc/footer.php"); ?>
   <!-- FOOTER -->
 
 
-<div id="menu-holder">
-  <?php include("inc/menu-contact.php"); ?>
-</div>
-<div id="menu-holder2">
-  <?php include("inc/mobile-menu.php"); ?>
+  <div id="menu-holder">
+    <?php include("inc/menu-contact.php"); ?>
+  </div>
+  <div id="menu-holder2">
+    <?php include("inc/mobile-menu.php"); ?>
 
-</div>
+  </div>
 
 
 
-<script src="js/scripts.js"></script>
-<script src="js/jquery.multilevelpushmenu.min.js" charset="utf-8"></script>
+  <script src="js/scripts.js"></script>
+  <script src="js/jquery.multilevelpushmenu.js" charset="utf-8"></script>
   <script src="js/parallax.min.js"></script>
-  <script src="js/bootstrap-slider.min.js" charset="utf-8"></script>
+  <!-- <script src="js/bootstrap-slider.min.js" charset="utf-8"></script> -->
   <script src="js/jquery.bxslider.js"></script>
   <script src="js/scrollreveal.js"></script>
-  <script src="js/svg-animation.js"></script>
-        <script type="text/javascript" src="http://oss.maxcdn.com/libs/modernizr/2.6.2/modernizr.min.js"></script>
+  <!-- <script src="js/svg-animation.js"></script> -->
+  <script type="text/javascript" src="http://oss.maxcdn.com/libs/modernizr/2.6.2/modernizr.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
 
   <script>
     $(document).ready(function () {
 
-      $('.slider').bxSlider();
 
+$('#exampleModal').on('show.bs.modal', function (event) {
+
+});
 
       window.sr = ScrollReveal();
 
-      //HERO SLIDER ANIMATION
-      sr.reveal('.slide h1', {
-        duration: 1000,
-        delay: 1500,
-        origin: 'left',
-        reset: true,
+      $('.slider').bxSlider({
+        onSliderLoad: function () {
+          //HERO SLIDER ANIMATION
+          sr.reveal('.slide h1', {
+            duration: 1000,
+            delay: 1500,
+            origin: 'left',
+            reset: true,
 
-      }, 1000);
-      sr.reveal('.hero-cta', {
-        duration: 1000,
-        delay: 1800,
-        origin: 'bottom',
-        reset: true
-      }, 1000);
-      sr.reveal('.slide .frame-1', {
-        duration: 1000,
-        origin: 'right',
-        reset: true,
-        distance: '300px',
-        scale: 1
-      }, 300);
-      sr.reveal('.slide .frame-3', {
-        duration: 1000,
-        delay: 800,
-        origin: 'right',
-        reset: true,
-        distance: '300px',
-        scale: 1
-      }, 300);
-      sr.reveal('.slide .frame-2', {
-        duration: 1000,
-        delay: 400,
-        origin: 'right',
-        reset: true,
-        distance: '300px',
-        scale: 1
-      }, 300);
+          }, 1000);
+          sr.reveal('.hero-cta', {
+            duration: 1000,
+            delay: 1800,
+            origin: 'bottom',
+            reset: true
+          }, 1000);
+          sr.reveal('.slide .frame-1', {
+            duration: 1000,
+            origin: 'right',
+            reset: true,
+            distance: '300px',
+            scale: 1
+          }, 300);
+          sr.reveal('.slide .frame-3', {
+            duration: 1000,
+            delay: 800,
+            origin: 'right',
+            reset: true,
+            distance: '300px',
+            scale: 1
+          }, 300);
+          sr.reveal('.slide .frame-2', {
+            duration: 1000,
+            delay: 400,
+            origin: 'right',
+            reset: true,
+            distance: '300px',
+            scale: 1,
+          }, 300);
+        },
+        easing: 'ease-in-out',
+        auto: true,
+        touchEnabled: true,
+        pause: 6000
+      });
 
 
+      $('.project-slider').bxSlider({
+        auto: true,
+        // moveSlides: 2,
+        slideMargin: 10,
+        infiniteLoop: true,
+        easing: null,
+        // adaptiveHeight: true,
+        touchEnabled: true
+        // pagerCustom: '.project-slider'
+      });
 
       // sr.reveal('.part-2 .logo', {
       //   duration: 1000,
@@ -485,7 +681,7 @@
       }, 500);
       sr.reveal('.part-601 .holder .line', {
         duration: 1000,
-         distance: '100px',
+        distance: '100px',
         origin: 'bottom'
 
       }, 500);

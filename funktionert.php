@@ -20,6 +20,7 @@
     crossorigin="anonymous"></script>
 
 	<div class="funkt-hero">
+	<div id="bottomLine"></div>
 		<div id="triangle-down"></div>
 		<?php include("inc/top-menu.php"); ?>
 		<div class="container">
@@ -300,8 +301,8 @@
 
 
 
-	<script src="js/jquery.multilevelpushmenu.min.js" charset="utf-8"></script>
 	<script src="js/scripts.js"></script>
+	<script src="js/jquery.multilevelpushmenu.js" charset="utf-8"></script>
 	<script src="js/parallax.min.js"></script>
 	<script src="js/scrollreveal.js"></script>
 	<script src="js/svg-animation.js"></script>
@@ -376,26 +377,6 @@
 				origin: 'bottom',
 				viewFactor: 0.8
 			}, 1000);
-
-
-
-
-
-
-
-			$('#first-form').click(function () {
-				$('#first-form-child').slideToggle();
-				// $('.first-form-child').hide();
-				$(this).find('i').toggleClass('fa-minus');
-			});
-
-			$('#second-form').click(function () {
-				$('#second-form-child').slideToggle();
-				$(this).find('i').toggleClass('fa-minus');
-			});
-
-
-
 
 		});
 	</script>

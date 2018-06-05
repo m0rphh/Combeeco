@@ -104,7 +104,9 @@
 }
 
 .multilevelpushmenu_wrapper .backItemClass {
-	display: block;
+	display: none;
+	position: relative;
+	z-index: -10;
 	padding: .4em .4em .4em .4em;
 	background: #62697f;
 	border-top: 1px solid #295685;

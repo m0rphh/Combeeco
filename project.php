@@ -320,7 +320,7 @@
 
 
 
-  <script src="js/jquery.multilevelpushmenu.min.js" charset="utf-8"></script>
+  <script src="js/jquery.multilevelpushmenu.js" charset="utf-8"></script>
   <script src="js/scripts.js"></script>
   <script src="js/bootstrap-slider.min.js" charset="utf-8"></script>
   <script src="js/scrollreveal.js"></script>

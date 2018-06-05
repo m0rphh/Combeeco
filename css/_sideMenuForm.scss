@@ -1,9 +1,12 @@
 .form-holder {
+  z-index: 999;
   padding: 0 40px;
   box-sizing: border-box;
   // margin-right: 0 !important;
   max-width: 340px;
   left: 0 !important;
+  position: absolute;
+  transition: all .4s  ease-in;
   h3 {
     color: #fbac39;
     font-weight: 600;
@@ -72,6 +75,7 @@
       font-family: $font;
       font-size: 16px;
       font-weight: 300;
+      border-radius: 0;
     }
 
     textarea {
@@ -86,6 +90,7 @@
       font-family: $font;
       font-size: 16px;
       font-weight: 300;
+      border-radius: 0;
     }
 
     button[type="submit"] {
@@ -103,6 +108,9 @@
       border: 1px solid #cccccc;
       font-size: 16px;
       cursor: pointer;
+      @include mobile {
+        padding: 10px;
+      }
     }
 
     ::-webkit-input-placeholder {

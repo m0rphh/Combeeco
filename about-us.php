@@ -67,12 +67,8 @@
               Vertrieb von Immobilien.
             </p>
           </div>
-          <div class="item">
-            <img src="img/about/coinvest.svg" alt="">
-            <h4>Co-investmente</h4>
-            <p>Wir bieten nur Projekte auf combeeco an, von denen wir so überzeugt sind, dass wir selbst investieren.</p>
-          </div>
-          <div class="item">
+
+       <div class="item">
             <img src="img/about/schwarmidee.svg" alt="">
             <h4>Schwarm Idee</h4>
             <p>combeeco ermöglicht es Anlegern schon ab 500 EUR an Projektfinanzierungen teilzuhaben und ein diversifiziertes
@@ -83,12 +79,17 @@
         </div>
       </div>
       <div>
-        <div class="item">
+        <!-- <div class="item">
           <img src="img/about/unabhangigkeit.svg" alt="">
           <h4>CUnabhängigkeit</h4>
           <p>Wir sind komplett unabhängig und frei finanziert und können daher frei die besten Projekte für die Anleger auswählen
             ohne Renditezwängen von Shareholdern genügen zu müssen.</p>
-        </div>
+        </div> -->
+        <div class="item">
+            <img src="img/about/coinvest.svg" alt="">
+            <h4>Co-investmente</h4>
+            <p>Wir bieten nur Projekte auf combeeco an, von denen wir so überzeugt sind, dass wir selbst investieren.</p>
+          </div>
         <div class="item">
           <img src="img/about/performance.svg" alt="">
           <h4>Performance</h4>
@@ -96,6 +97,7 @@
             den besten Erfolgsaussichten.
           </p>
         </div>
+
       </div>
     </div>
   </div>
@@ -263,8 +265,8 @@
 
 
 
-  <script src="js/jquery.multilevelpushmenu.min.js" charset="utf-8"></script>
   <script src="js/scripts.js" charset="utf-8"></script>
+  <script src="js/jquery.multilevelpushmenu.js" charset="utf-8"></script>
   <script src="js/scrollreveal.js"></script>
 
   <script>

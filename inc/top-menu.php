@@ -17,9 +17,9 @@
         <a class="active" href="#">de</a>
       </div>
       <ul>
-        <li>
+        <!-- <li>
           <a href="project.php">projekte</a>
-        </li>
+        </li> -->
         <li>
           <a href="funktionert.php">So funktioniert´s</a>
         </li>
@@ -33,7 +33,7 @@
           <a class="registration btn-effect-light" href="">Registrieren</a>
         </li> -->
         <li>
-          <a class="login btn-effect-dark" href="">Anmelden</a>
+          <!-- <a class="login btn-effect-dark" href="">Anmelden</a> -->
         </li>
       </ul>
     </div>
